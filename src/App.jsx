@@ -3,7 +3,9 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import './App.css'
 // import Home from './Home.jsx'
-import Task1 from './Task1.jsx'
+// import Task1 from './Task1.jsx'
+// import Task2 from './task2/Task2.jsx'
+import Reusable from './task2/Reusable'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -12,7 +14,8 @@ function App() {
     <>
 
 
-      <Task1 />
+      {/* <Task1 /> */}
+      <Reusable />
         {/* <Home str="Welcome to my React App!" /> */}
         
 
