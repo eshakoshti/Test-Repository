@@ -4,8 +4,10 @@ import { useState } from 'react'
 import './App.css'
 // import Home from './Home.jsx'
 // import Task1 from './Task1.jsx'
-// import Task2 from './task2/Task2.jsx'
-import Reusable from './task2/Reusable'
+import Task2 from './task2/Task2.jsx'
+//import Reusable from './task2/Reusable'
+//import Task3 from './Task_3/Task3.jsx'
+import Imagedata from './Task_3/Imagedata.jsx'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -15,7 +17,9 @@ function App() {
 
 
       {/* <Task1 /> */}
-      <Task2/>
+      {/* <Task2/> */}
+      {/* <Task3/> */}
+      <Imagedata/>
       {/* <Reusable /> */}
         {/* <Home str="Welcome to my React App!" /> */}
         
