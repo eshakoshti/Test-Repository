@@ -15,7 +15,8 @@ function App() {
 
 
       {/* <Task1 /> */}
-      <Reusable />
+      <Task2/>
+      {/* <Reusable /> */}
         {/* <Home str="Welcome to my React App!" /> */}
         
 
