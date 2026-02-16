@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Java script </title>
+</head>
+<body>
+    <h1 style="text-align:center; font-size: 50px; margin: 40px;"><u>Javascript  String</u></h1>
+    <h2>1. Concat string() Method</h2>
+<script>
+    let t1 = "Good Morning";
+    let t2="everyone";
+    let c1 = t1.concat(" ",t2);
+    document.write(c1);
+</script>  
+<!-- ======================String Length()======================= -->
+ <h2>2.Length() Method</h2>
+    <script>
+    let t= "wow! good Nature";
+    let r1 = t.length;
+    document.write(r1);
+    </script>
+<!-- =====================Slice()========================   -->
+    <h2> 3.slice() Method</h2>
+<script>
+    let str = "BCA, MCA, BBA, MBA, BSC, MSC";
+    let result = str.slice(4);
+    document.write(result);
+</script>
+
+<!-- ==========================Substr()======================= -->
+  <h2>4. substr() Method</h2>
+<script>
+    let str1 = "BCA, MCA, BBA, MBA, BSC, MSC";
+    let result1 = str1.substr(-3);
+    document.write(result1);
+</script>  
+<!-- ==========================Repeat()============================= -->
+ <h2>5. repeat() Method</h2>
+<script>
+    let r = "Enjoy Your Life";
+    let cool = r.repeat(2);
+    document.write(cool);
+</script>  
+
+<!-- ==========================Trim()=========================== -->
+ <h2>6.trim() Method</h2>
+<script>
+    let s= "      Welcome to My Website";
+    let result2 = s.trim();
+    document.write(result2);
+</script>
+
+<!-- ========================Padstart()===================== -->
+ <h2>7.Padstart() Method</h2>
+<script>
+    let d= "8";
+    let result3 = d.padStart(5,0);
+    document.write(result3);
+    </script>
+
+ <!-- ======================Replace()========================== -->
+  <h2>8.Replace() Method</h2>
+    <script>
+    let text= "Play Football";
+    let result4 = text.replace("Football","Cricket");
+    document.write(result4);
+    </script>
+    <!-- =======================ReplaceAll()====================== -->
+     <h2>9.ReplaceAll() Method</h2>
+    <script>
+    let r2= "This is Garden,Garden is Beautiful";
+    let res = r2.replaceAll("Garden","Forest");
+    document.write(res);
+    </script>
+<!-- ==========================Split()======================== -->
+ <h2>10.Split() Method</h2>
+    <script>
+    let name= "google ,Facebook,Twitter,Instagram";
+    let result5 = name.split(",");
+    document.write(result5);
+    </script>
+<!-- =============================indexOf()========================-->
+ <h2>11.indexOf() Method</h2>
+    <script>
+    let data= "Enter your Full Details this webssite";
+    let result6 = data.indexOf("Details");
+    document.write(result6);
+    </script>
+<!-- =====================String Search()=========================-->
+ <h2>12.Search() Method</h2>
+    <script>
+    let data1= "wow! good Nature";
+    let result7 = data1.search("good");
+    document.write(result7);
+    </script>
+<!-- ======================charAt()============================ -->
+<h2>13. charAt() Method</h2>
+    <script>
+    let e1= "Good Job Students";
+    let result8 = e1.charAt(3);
+    document.write(result8);
+    </script>
+
+<!-- =====================charCodeAt()===================== -->
+ <h2>14. charCodeAt() Method</h2>
+    <script>
+    let e2= "Good Job Students";
+    let result9 = e2.charCodeAt(3);
+    document.write(result9);
+    </script>
+<!-- =====================toUpperCase()===================== -->
+ <h2>15. toUpperCase() Method</h2>
+    <script>
+    let e3= "my home page";
+    let result10 = e3.toUpperCase();
+    document.write(result10);
+    </script>
+
+<!-- =====================toLowerCase()===================== -->
+ <h2>16. toLowerCase() Method</h2>
+    <script>
+    let l= "my home page";
+    let result11 = l.toLowerCase();
+    document.write(result11);
+    </script>
+<!-- =====================match()===================== -->
+ <h2>17. match() Method</h2>
+    <script>
+    let m= "Nature is Beautiful and Nature is Amazing";
+    let result12 = m.match("Nature");
+    document.write(result12);
+    </script>
+<!-- =====================matchAll()===================== -->
+ <h2>18. matchAll() Method</h2>
+    <script>
+    let text1= "Nature is Beautiful and Nature is Amazing";
+    let result13 = Array.from(text1.matchAll("Nature"));
+    document.write(result13);
+    </script>
+<!-- =====================includes()===================== -->
+    <h2>19. includes() Method</h2>
+        <script>
+        let text2= "I Like Coffee";
+        let text3="I Like Tea";
+        let result14 = text2.includes("Coffee");
+        let result15 = text3.includes("Coffee");
+        document.write(result14);
+        document.write("<br>");
+        document.write(result15);
+    </script>
+<!-- ======================startsWith()=========================== -->
+    <h2>20. startsWith() Method</h2>
+    <script>
+        let k= "Welcome to My Website";
+        let result16 = k.startsWith("Welcome");
+        document.write(result16);
+    </script> 
+</body>
+</html>

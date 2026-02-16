@@ -20,8 +20,8 @@ function Imagedata() {
 
   return (
    <>
-   <div className='text-center text-5xl font-bold m-10'>Electronics Products</div>
-   <div className='text-left text-4xl font-bold m-10'>Television</div>
+   <div className='text-center text-5xl font-bold m-0 text-white bg-black  p-5'>Electronics Products</div>
+   <div className='text-left text-4xl font-bold m-10 text-blue-900'>Television</div>
     <div className='grid sm:grid-col-1 md:grid-cols-3 m-4 gap-7'>
    {
     Tv.map((product)=><div className='text-center' >
@@ -35,7 +35,7 @@ function Imagedata() {
    )}
        
     </div>
-    <div className='text-left text-4xl font-bold m-10'>Mobile</div>
+    <div className='text-left text-4xl font-bold m-10 text-blue-900'>Mobile</div>
     <div className='grid sm:grid-col-1 md:grid-cols-3 m-4 gap-7'>
    {
     Mobile.map((product)=><div className='text-center' >
@@ -49,10 +49,10 @@ function Imagedata() {
    )}
        
     </div>
-    <div className='text-left text-4xl font-bold m-10'>Air Conditioner</div>
+    <div className='text-left text-4xl font-bold m-10 text-blue-900'>Air Conditioner</div>
     <div className='grid sm:grid-col-1 md:grid-cols-3 m-4 gap-7'>
    {
-    Ac.map((product)=><div className='text-center' >
+    Ac.map((product)=><div className='  text-center' >
          <div className="m-10 h-fit w-fit"><img src={product.image}></img></div>
         <div className="font-bold text-2xl">{product.title}</div>
         <div>{product.category}</div>
