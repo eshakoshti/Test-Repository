@@ -1,25 +1,65 @@
-import { useState } from 'react'
+import { createContext, useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
 // import Home from './Home.jsx'
 // import Task1 from './Task1.jsx'
-import Task2 from './task2/Task2.jsx'
+ import Task2 from './task2/Task2.jsx'
 //import Reusable from './task2/Reusable'
-//import Task3 from './Task_3/Task3.jsx'
-import Imagedata from './Task_3/Imagedata.jsx'
+// import Task3 from './Task_3/Task3.jsx'
+// import Imagedata from './Task_3/Imagedata.jsx'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Contact from './Contact.jsx' 
+// import Navbar from './Navbar.jsx' 
+export const UserContext = createContext();
+import Home from './Task4_Navigation/Pages/Home.jsx'
+import Contact from './Task4_Navigation/Pages/Contact.jsx'
+import About from './Task4_Navigation/Pages/About.jsx'
+import Profile from './Task4_Navigation/Pages/Profile.jsx'  
+import Navigation from './Task4_Navigation/Navigation.jsx'              
 
 function App() {
   //const [count, setCount] = useState(0)
-  
+  const str1="Hello, Everyone! Welcome to my React App.";
   return (
     <>
+    {/* <Router> 
+        <Navbar /> 
+          <UserContext.Provider value={{str1}}>
+        <Routes> 
+          <Route path="/" element={<Task2 />} /> 
+          {/* <Route path="/menu" element={<Menu />} /> 
+          <Route path="/contact" element={<Contact />} />  */}
+          {/* <Route path="/contact" element={<Contact />} /> 
+          <Route path="*" element={<h1> PAGE NOT FOUND</h1>} /> 
+        </Routes> 
+          </UserContext.Provider>
+      </Router>  */} 
+
+      <div className="App">  
+      <Router> 
+        <Navigation />
+        <UserContext.Provider value={{str1}}>
+
+        <Routes> 
+          <Route path="/" element={<Home />} /> 
+          <Route path="/contact" element={<Contact />} /> 
+          <Route path="/about" element={<About />} /> 
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/navigation" element={<Navigation />} /> 
+          <Route path="*" element={<h1> PAGE NOT FOUND</h1>} /> 
+        </Routes> 
+        </UserContext.Provider> 
+      </Router> 
+    </div>
+  
 
 
       {/* <Task1 /> */}
       {/* <Task2/> */}
+       
       {/* <Task3/> */}
-      <Imagedata/>
+       {/* <Imagedata/>  */}
       {/* <Reusable /> */}
         {/* <Home str="Welcome to my React App!" /> */}
         

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array</title>
+</head>
+<body>
+    
+    <!-- ====================Creating Array===================== -->
+    <h1 style="text-align:center; font-size: 50px; margin: 40px;"><u>JavaScript Array</u></h1>
+
+    <h2 >1.Creating Array</h2>
+    <p id="Array"></p>
+
+    <h2>2.Array Length</h2>
+    <p id="Array length"></p>
+
+    <h2>3.Adding Array Elements</h2>
+    <p id="Add Element"></p>
+
+    <h2>4.Array At() Method</h2>
+    <p id="Arrayat"></p >
+
+    <h2>5.Array Join() Method</h2>
+    <p id="Join"></p>
+
+    <h2>6.Array Pop() Method</h2>
+    <p id="Pop"></p>
+
+    <h2>7. Array Shift() Method</h2>
+    <p id="Shift"></p>
+
+    <h2>8. Array Unshift() Method</h2>
+    <p id="Unshift"></p>
+
+    <h2>9. Array Concat Method</h2>
+    <p id="Concat"></p> 
+
+    <h2>10. Copywithin() Method</h2>
+    <p id="Copywithin"></p>
+
+    <h2>11. Flat() Method</h2>
+    <p id="Flat"></p>
+
+    <h2>12. Splice() Method</h2>
+    <p id="Splice"></p>
+
+    <h2>13.ToSpliced() Method</h2>
+    <p id="ToSplice"></p>
+
+    <h2>14.Slice Method</h2>
+    <p id="Slice"></p>
+
+    <h2>15.Array IndexOf() Method</h2>
+    <p id="IndexOf"></p>
+
+    <h2>16.LastIndexOf() Method</h2>
+    <p id="lastindex"></p>
+
+    <h2>17.Array Find() Method</h2>
+    <p id="Find"></p>
+
+    <h2>18. FindLast() Method</h2>
+    <p id="FindLast"></p>
+
+    <h2>19.Array sort() Method</h2>
+    <p id="Sort"></p>
+
+    <h2>20.Array reverse</h2>
+    <p id="Reverse"></p>
+
+    <h2>21.Tosort Array Method</h2>
+    <p id="tosorted"></p>
+
+    
+    
+    
+    <script>
+        const colors=["Red","Green","Blue","Yellow","Orange","gray"];
+        document.getElementById("Array").innerHTML="Creating Array: " + colors;
+        document.getElementById("Array length").innerHTML="Array Length: " + colors.length;
+        colors.push("Purple");
+        document.getElementById("Add Element").innerHTML="Adding Array Elements: " + colors; 
+        document.getElementById("Arrayat").innerHTML="Array At Method: " + colors.at(2);
+        document.getElementById("Join").innerHTML="Array Join Method: " + colors.join(" | "); 
+        colors.pop();
+        document.getElementById("Pop").innerHTML="Array Pop Method: " + colors;
+        colors.shift();
+        document.getElementById("Shift").innerHTML="Array Shift Method: "  + colors;
+        colors.unshift("Pink");
+        document.getElementById("Unshift").innerHTML="Array Unshift Method : " + colors;
+        const txt=["Colorfull","Colorless"];
+        const allColors=colors.concat(txt);   
+        document.getElementById("Concat").innerHTML="Array Concat Method: " + allColors;
+        colors.copyWithin(0,2,4);
+        document.getElementById("Copywithin").innerHTML="Array Copywithin Method: " + colors;
+        let arr1=[1,2,3,[4,5,6],7];
+        document.getElementById("Flat").innerHTML="Array Flat Method: " + arr1.flat(); 
+        colors.splice(2,0,"white","Black");
+        document.getElementById("Splice").innerHTML="Array Splice Method   : " + colors;
+        clr=colors.toSpliced(2,2,"Violet","Mustard");
+        document.getElementById("ToSplice").innerHTML="Array ToSpliced Method: " + clr;
+        document.getElementById("Slice").innerHTML="Array Slice Method: " + colors.slice(1,4);
+        document.getElementById("IndexOf").innerHTML="Array IndexOf Method: " + colors.indexOf("Blue"); 
+        lastindex=colors.lastIndexOf("gray");
+        document.getElementById("lastindex").innerHTML="Gray is postioned at index: " + lastindex;
+        document.getElementById("Find").innerHTML="Array Find Method: " + arr1.find((value) => value > 4);
+        let arr2=[10,50,200,80,70];
+        document.getElementById("FindLast").innerHTML="Array Find Method: "+ arr2.findLast((value)=>value>70);
+        let sorting=colors.sort();
+        document.getElementById("Sort").innerHTML="Array Sort Method: "+ sorting ;
+        document.getElementById("Reverse").innerHTML="Array Reverse Method: "+ colors.reverse();
+        document.getElementById("tosorted").innerHTML="Array Tosort Method: "+ colors.toSortrd();
+
+
+        
+
+
+
+
+
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>
